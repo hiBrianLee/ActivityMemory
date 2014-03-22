@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.tigerpenguin.lab.activitymemory.singleprocess" >
+
+    <application android:allowBackup="true"
+                 android:icon="@drawable/ic_launcher"
+                 android:label="SingleProcess"
+                 android:theme="@style/AppTheme">
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityA"
+                  android:label="Single Process">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityB"
+                  android:label="Activity B"/>
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityC"
+                  android:label="Activity C"/>
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityD"
+                  android:label="Activity D"/>
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityE"
+                  android:label="Activity E"/>
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityF"
+                  android:label="Activity F"/>
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityG"
+                  android:label="Activity G"/>
+
+    </application>
+
+</manifest>
