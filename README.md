@@ -8,14 +8,13 @@ See the original blog – http://lab.tigerpenguin.com/2014/03/android-activity-a
 Setup
 =====
 
-Checkout the project and run `gradle build`
-In case of Gradle `OutOfMemoryError`, set `GRADLE_OPTS` environment variable to `-Xmx2048m`
+Checkout the project and run `./gradlew tasks` to see a list of available tasks.
+You can run `./gradlew installSingleprocessDebug` or `./gradlew installMultiprocessDebug` to build and install the appropriate apk. 
 
 IntelliJ Setup
 ==============
 
-Go to `File` -> `Import Project` and import the 'build.gradle' file.
-In case of Gradle `OutOfMemoryError`, go to IntelliJ Gradle settings and add `-Xmx2048m` as Gradle VM options.
+Go to `File` -> `Import Project` and import the 'settings.gradle' file.
 
 License
 =======

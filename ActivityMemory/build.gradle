@@ -3,13 +3,35 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.9.+'
+        classpath 'com.android.tools.build:gradle:0.10.+'
     }
 }
 
-apply plugin: 'android-library'
+apply plugin: 'android'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.3"
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+        minSdkVersion 15
+        targetSdkVersion 19
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    productFlavors {
+        singleprocess {
+            packageName "com.tigerpenguin.lab.activitymemory.singleprocess"
+        }
+        multiprocess {
+            packageName "com.tigerpenguin.lab.activitymemory.multiprocess"
+            versionCode 1
+        }
+    }
 }
